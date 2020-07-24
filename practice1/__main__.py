@@ -151,7 +151,12 @@ def print_higher_or_lower():
             print("Too high!")
 
 
+def print_practice_git():
+    print("Testing testing 123")
+
+
+
 
 if __name__ == '__main__':
 
-    print_higher_or_lower()
+    print_practice_git()
