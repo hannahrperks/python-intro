@@ -155,8 +155,70 @@ def print_practice_git():
     print("Testing testing 123")
 
 
+def print_whats_your_name():
+    name = input('Your name: ')
+    if name == 'Hannah':
+        print("That is a nice name!")
+    elif name == 'James':
+        print("Sounds like a weirdo to me...")
+    else:
+        print("You have a nice name.")
+
+
+def print_sum_of_two():
+    input1 = float(input('Pick a number: '))
+    input2 = float(input('Pick another: '))
+    sum = input1 + input2
+    print(sum)
+    if sum > 100:
+        print("That is a big number.")
+
+
+def hello():
+    print('Hello!')
+
+def print_welcome(name):
+    print('Welcome,', name)
+
+def area_square(side_length):
+    return(side_length**2)
+
+def area_rectangle(width, height):
+    return width * height
+
+def area_circle(radius):
+    return(3.14 * radius**2)
+
+def positive_input(prompt):
+    number = float(input(prompt))
+    while number <= 0:
+        print('Must be a positive number.')
+        number = float(input(prompt))
+        return number
+
+def print_area_of_shape():
+    name = input("What's your name? ")
+    hello()
+    print_welcome(name)
+    shape = input("Would you like to find the area of a square, a rectangle or a circle? ")
+    if shape == 'square':
+        l = float(input('Side Length: '))
+        print('Side Length =', l, 'so area of the square =', area_square(l))
+    elif shape == 'rectangle':
+        w = float(input('Width: '))
+        h = float(input('Height: '))
+        print('Width =', w, 'and height =', h, 'so area of the rectangle =', area_rectangle(w, h))
+    elif shape == 'circle':
+        r = float(input('Radius: '))
+        print('Radius =', r, 'so area of the circle =', area_circle(r))
+    else:
+        print('Shape not recognised.')
 
 
 if __name__ == '__main__':
 
-    print_practice_git()
+   print_area_of_shape()
+
+
+
+
